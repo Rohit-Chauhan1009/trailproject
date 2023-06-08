@@ -3,10 +3,8 @@ package com.geartlearning.main;
 public class Main {
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//Admin Department
 		AdminDepartment AdminDep = new AdminDepartment();
-		
-		
 		
 		System.out.println("Welcome to "+AdminDep.departmentName());
 		System.out.println(AdminDep.getTodaysWork());
@@ -14,6 +12,7 @@ public class Main {
 		System.out.println(AdminDep.isTodayAHoliday());
 		System.out.println("");
 		
+		//Hr Department
 		HrDepartment hr = new HrDepartment();
 		
 		System.out.println("Welcome to "+hr.departmentName());
@@ -23,6 +22,7 @@ public class Main {
 		System.out.println(hr.isTodayAHoliday());
 		System.out.println("");
 		
+		//Tech Department
 		TechDepartment tech = new TechDepartment();
 		
 		System.out.println("Welcome to "+tech.departmentName());
@@ -31,10 +31,6 @@ public class Main {
 		System.out.println(tech.getTechStackInformation());
 		System.out.println(tech.isTodayAHoliday());
 		System.out.println("");
-		
-		SuperDepartment sup = new SuperDepartment();
-		System.out.println(sup.isTodayAHoliday());
-		
 	}
 
 }
